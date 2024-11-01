@@ -1,4 +1,4 @@
-const numOfPadding = 750;
+const numOfPadding = 2750;
 const fs = require("fs");
 
 const KNN = require("ml-knn");
@@ -11,13 +11,6 @@ const trainLabelArray = Object.values(
 );
 const testDataArray = Object.values(
   require("./data/testDataArrayReduce" + numOfPadding + ".json")
-);
-const testLabelArray = Object.values(
-  require("./data/testLabelArrayReduce" + numOfPadding + ".json")
-);
-
-const predictionPython = Object.values(
-  require("./data/predictionOfPythonReduce" + numOfPadding + ".json")
 );
 
 const mlKNNPredictionPath =

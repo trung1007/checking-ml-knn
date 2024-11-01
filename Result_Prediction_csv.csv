@@ -1,0 +1,5 @@
+,ml-knn prediction 2750,Python prediction 2750,ml-knn prediction 2500,Python prediction 2500,ml-knn prediction 2000,Python prediction 2000,ml-knn prediction 1500,Python prediction 1500,ml-knn prediction 1000,Python prediction 1000,ml-knn prediction 750,Python prediction 750
+Accuracy,0.73,0.77,0.73,0.78,0.73,0.78,0.74,0.79,0.75,0.8,0.75,0.8
+Precision,0.42,0.27,0.43,0.27,0.42,0.37,0.43,0.38,0.45,0.3,0.44,0.39
+Recall,0.48,0.66,0.47,0.66,0.46,0.61,0.46,0.61,0.46,0.64,0.45,0.59
+F1-score,0.45,0.38,0.45,0.39,0.44,0.46,0.45,0.47,0.45,0.41,0.44,0.47

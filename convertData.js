@@ -3,11 +3,12 @@ const dictionary = require("./data/dataset_new_vector_ori_size15.json");
 const trainData = require("./data/trainData.json");
 const testData = require("./data/testData.json");
 
+
 const dataTrainArray = [];
 const dataTestArray = [];
 const labelTrainArray = [];
 const labelTestArray = [];
-const numOfPadding = 750;
+const numOfPadding = 2750;
 const trainDataPath = "./data/trainDataArrayReduce" + numOfPadding + ".json";
 const trainLabelPath = "./data/trainLabelArrayReduce" + numOfPadding + ".json";
 const testDataPath = "./data/testDataArrayReduce" + numOfPadding + ".json";

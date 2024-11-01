@@ -1,5 +1,21 @@
 const numOfPadding = 1000;
 
+const trainData_nonReduce = Object.values(require('./data/trainDataArrayNoReduce.json'))
+const trainLabel_nonReduce = Object.values(require('./data/trainLabelArrayNoReduce.json'))
+const testData_nonReduce = Object.values(require('./data/testDataArrayNoReduce.json'))
+const testLabel_nonReduce = Object.values(require('./data/testLabelArrayNoReduce.json'))
+const train_embedding  = Object.values(require('./data/embeddings.json'))
+const test_embedding = Object.values(require('./data/testEmbeddings.json'))
+console.log(trainData_nonReduce.length);
+console.log(trainLabel_nonReduce.length);
+console.log(testData_nonReduce.length);
+console.log(testLabel_nonReduce.length);
+console.log(train_embedding.length);
+console.log(test_embedding.length);
+
+
+
+
 const trainDataArray = Object.values(
   require("./data/trainDataArrayReduce" + numOfPadding + ".json")
 );
@@ -13,12 +29,12 @@ const testLabelArray = Object.values(
   require("./data/testLabelArrayReduce" + numOfPadding + ".json")
 );
 
-console.log(trainDataArray.length);
-console.log(trainLabelArray.length);
-console.log(testDataArray.length);
-console.log(testLabelArray.length);
+// console.log(trainDataArray.length);
+// console.log(trainLabelArray.length);
+// console.log(testDataArray.length);
+// console.log(testLabelArray.length);
 
-countSpam_Ham(trainLabelArray, testLabelArray)
+// countSpam_Ham(trainLabelArray, testLabelArray)
 
 function countSpam_Ham(trainLabel, testLabel) {
   let spam_train = 0;

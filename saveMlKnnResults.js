@@ -23,7 +23,14 @@ const testDataEmbeddings = Object.values(require('./data/testDataArrayNoReduceEm
 
 const mlKnnPredictionEmbeddingsPath = './data/predictionOfMlKnnNoReduceEmbeddings.json'
 
-saveResultMLKNN(mlKnnPredictionEmbeddingsPath, trainDataEmbeddings, trainLabelArrayNoReduce, testDataEmbeddings)
+const train_vectorized = Object.values(require('./data/trainDataVectorized.json'))
+const test_vectorized = Object.values(require('./data/testDataVectorized.json'))
+
+const mlKnnPredictionVectorizedPath = "./data/predictionOfMlKnnNoReduceVectorized.json"
+
+
+// saveResultMLKNN(mlKnnPredictionEmbeddingsPath, trainDataEmbeddings, trainLabelArrayNoReduce, testDataEmbeddings)
+saveResultMLKNN(mlKnnPredictionVectorizedPath, train_vectorized, trainLabelArrayNoReduce, test_vectorized)
 
 function saveResultMLKNN(mlKNNPredictionPath, train, label, test) {
   const trainData = [];

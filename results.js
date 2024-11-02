@@ -19,12 +19,14 @@ const predictionMlKNN = Object.values(
 
 const predictionByEmbeddedMlKnn = Object.values(require('./data/predictionOfMlKnnNoReduceEmbeddings.json'))
 const predictionByEmbeddedPython = Object.values(require('./data/predictionOfPythonNoReduceEmbeddings.json'))
+const predictionByVectorizedMlKnn = Object.values(require('./data/predictionOfMlKnnNoReduceVectorized.json'))
 
 // console.log(predictionByEmbeddedMlKnn.length);
 
 
-evaluationModel(testLabel_nonReduce, predictionByEmbeddedMlKnn, "Result of embedding data by ml-knn")
-evaluationModel(testLabel_nonReduce, predictionByEmbeddedPython, "Result of embedding data by python")
+// evaluationModel(testLabel_nonReduce, predictionByEmbeddedMlKnn, "Result of embedding data by ml-knn")
+// evaluationModel(testLabel_nonReduce, predictionByEmbeddedPython, "Result of embedding data by python")
+evaluationModel(testLabel_nonReduce,predictionByVectorizedMlKnn,"Result of vectorized data by ml-knn")
 
 
 // evaluationModelMLKNN(testLabelArray, predictionMlKNN);

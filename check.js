@@ -1,20 +1,26 @@
 const numOfPadding = 1000;
 
-const trainData_nonReduce = Object.values(require('./data/trainDataArrayNoReduce.json'))
+const trainData_nonReduce = Object.values(require('./data/trainDataTextNoReduce.json'))
 const trainLabel_nonReduce = Object.values(require('./data/trainLabelArrayNoReduce.json'))
-const testData_nonReduce = Object.values(require('./data/testDataArrayNoReduce.json'))
+const testData_nonReduce = Object.values(require('./data/testDataTextNoReduce.json'))
 const testLabel_nonReduce = Object.values(require('./data/testLabelArrayNoReduce.json'))
 // const train_embedding  = Object.values(require('./data/embeddings.json'))
 // const test_embedding = Object.values(require('./data/testEmbeddings.json'))
-const train_embedding  = Object.values(require('./data/trainDataArrayNoReduceEmbeddings.json'))
+const train_embedding = Object.values(require('./data/trainDataArrayNoReduceEmbeddings.json'))
 const test_embedding = Object.values(require('./data/testDataArrayNoReduceEmbeddings.json'))
+const train_vectorized = Object.values(require('./data/trainDataVectorized.json'))
+const test_vectorized = Object.values(require('./data/testDataVectorized.json'))
 
-console.log(trainData_nonReduce.length);
-console.log(trainLabel_nonReduce.length);
-console.log(testData_nonReduce.length);
-console.log(testLabel_nonReduce.length);
-console.log(train_embedding.length);
-console.log(test_embedding.length);
+console.log("trainData_nonReduce.length: " + trainData_nonReduce.length);
+console.log("trainLabel_nonReduce.length: " + trainLabel_nonReduce.length);
+console.log("testData_nonReduce.length: " + testData_nonReduce.length);
+console.log("testLabel_nonReduce.length: " + testLabel_nonReduce.length);
+console.log("train_embedding.length: " + train_embedding.length);
+console.log("test_embedding.length: " + test_embedding.length);
+console.log("train_vectorized.length: " + train_vectorized.length);
+console.log("test_vectorized.length: " + test_vectorized.length);
+
+
 
 
 

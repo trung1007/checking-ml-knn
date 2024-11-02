@@ -4,8 +4,11 @@ const trainData_nonReduce = Object.values(require('./data/trainDataArrayNoReduce
 const trainLabel_nonReduce = Object.values(require('./data/trainLabelArrayNoReduce.json'))
 const testData_nonReduce = Object.values(require('./data/testDataArrayNoReduce.json'))
 const testLabel_nonReduce = Object.values(require('./data/testLabelArrayNoReduce.json'))
-const train_embedding  = Object.values(require('./data/embeddings.json'))
-const test_embedding = Object.values(require('./data/testEmbeddings.json'))
+// const train_embedding  = Object.values(require('./data/embeddings.json'))
+// const test_embedding = Object.values(require('./data/testEmbeddings.json'))
+const train_embedding  = Object.values(require('./data/trainDataArrayNoReduceEmbeddings.json'))
+const test_embedding = Object.values(require('./data/testDataArrayNoReduceEmbeddings.json'))
+
 console.log(trainData_nonReduce.length);
 console.log(trainLabel_nonReduce.length);
 console.log(testData_nonReduce.length);

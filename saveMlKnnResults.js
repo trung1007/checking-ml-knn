@@ -1,4 +1,4 @@
-const numOfPadding = 2750;
+const numOfPadding = 1000;
 const fs = require("fs");
 
 const KNN = require("ml-knn");
@@ -16,21 +16,26 @@ const testDataArray = Object.values(
 const mlKNNPredictionPath =
   "./data/predictionOfMlKnnReduce" + numOfPadding + ".json";
 
+const trainDataEmbeddings = Object.values(require('./data/trainDataArrayNoReduceEmbeddings.json'))
+const trainLabelArrayNoReduce = Object.values(require('./data/trainLabelArrayNoReduce.json'))
 
+const testDataEmbeddings = Object.values(require('./data/testDataArrayNoReduceEmbeddings.json'))
 
-saveResultMLKNN(mlKNNPredictionPath)
+const mlKnnPredictionEmbeddingsPath = './data/predictionOfMlKnnNoReduceEmbeddings.json'
 
-function saveResultMLKNN(mlKNNPredictionPath) {
+saveResultMLKNN(mlKnnPredictionEmbeddingsPath, trainDataEmbeddings, trainLabelArrayNoReduce, testDataEmbeddings)
+
+function saveResultMLKNN(mlKNNPredictionPath, train, label, test) {
   const trainData = [];
   const trainLabel = [];
   const testData = [];
 
-  for (let i = 0; i < trainDataArray.length; i++) {
-    trainData.push(trainDataArray[i]);
-    trainLabel.push(trainLabelArray[i]);
+  for (let i = 0; i < train.length; i++) {
+    trainData.push(train[i]);
+    trainLabel.push(label[i]);
   }
-  for (let i = 0; i < testDataArray.length; i++) {
-    testData.push(testDataArray[i]);
+  for (let i = 0; i < test.length; i++) {
+    testData.push(test[i]);
   }
   const knn_model = new KNN(trainData, trainLabel, { k: 2 });
   const prediction = knn_model.predict(testData);

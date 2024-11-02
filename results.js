@@ -7,6 +7,7 @@ const numOfPadding = 750;
 const testLabelArray = Object.values(
   require("./data/testLabelArrayReduce" + numOfPadding + ".json")
 );
+const testLabel_nonReduce = Object.values(require('./data/testLabelArrayNoReduce.json'))
 
 const predictionPython = Object.values(
   require("./data/predictionOfPythonReduce" + numOfPadding + ".json")
@@ -16,18 +17,18 @@ const predictionMlKNN = Object.values(
   require("./data/predictionOfMlKnnReduce" + numOfPadding + ".json")
 );
 
-const predictionByEmbeddedMlKnn = Object.values(require('./data/predictionOfEmbeddingMLKNN.json'))
-const predictionByEmbeddedPython = Object.values(require('./data/predictionOfEmbeddingPython.json'))
+const predictionByEmbeddedMlKnn = Object.values(require('./data/predictionOfMlKnnNoReduceEmbeddings.json'))
+const predictionByEmbeddedPython = Object.values(require('./data/predictionOfPythonNoReduceEmbeddings.json'))
 
 // console.log(predictionByEmbeddedMlKnn.length);
 
 
-// evaluationModel(testLabel_nonReduce, predictionByEmbeddedMlKnn, "Result of embedding data by ml-knn")
-// evaluationModel(testLabel_nonReduce, predictionByEmbeddedPython, "Result of embedding data by python")
+evaluationModel(testLabel_nonReduce, predictionByEmbeddedMlKnn, "Result of embedding data by ml-knn")
+evaluationModel(testLabel_nonReduce, predictionByEmbeddedPython, "Result of embedding data by python")
 
 
-evaluationModelMLKNN(testLabelArray, predictionMlKNN);
-evaluationModelPython(testLabelArray, predictionPython);
+// evaluationModelMLKNN(testLabelArray, predictionMlKNN);
+// evaluationModelPython(testLabelArray, predictionPython);
 
 function evaluationModel(result_expect, result_actual, typeText) {
   let true_positive = 0;

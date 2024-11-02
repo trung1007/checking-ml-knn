@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "ml-knn": "^3.0.0"
+    "ml-knn": "^3.0.0",
+    "numjs": "^0.16.1"
   }
 }

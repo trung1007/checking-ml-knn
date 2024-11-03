@@ -32,30 +32,5 @@ function vectorizedData(data, path) {
     fs.writeFileSync(path, JSON.stringify(documentVector, null, 2), 'utf-8')
 }
 
-// let wordPerSentence = test_string.toLowerCase().trim().split(" ")
 
-// let testArray = []
-// for (let i = 0; i < wordPerSentence.length; i++) {
-//     if (wordPerSentence[i] in dictionaryPython) {
-//         testArray.push(dictionaryPython[wordPerSentence[i]])
-//     }
-//     else {
-//         testArray.push(Array(100).fill(0))
-//     }
-// }
-
-
-
-
-// const columnMeans = testArray[0].map((_, colIndex) => {
-//     const sum = testArray.reduce((acc, row) => acc + row[colIndex], 0);
-//     return sum / testArray.length;
-// });
-
-// console.log(columnMeans);
-
-// for(let i = 0;i<testArray.length;i++){
-//     let col_tmp = testArray.slice(null,[i,i+1])
-//     console.log(col_tmp);
-// }
 

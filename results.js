@@ -4,29 +4,21 @@ const numOfPadding = 750;
 // console.log(testLabel_nonReduce.length);
 
 
-const testLabelArray = Object.values(
-  require("./data/testLabelArrayReduce" + numOfPadding + ".json")
-);
 const testLabel_nonReduce = Object.values(require('./data/testLabelArrayNoReduce.json'))
 
-const predictionPython = Object.values(
-  require("./data/predictionOfPythonReduce" + numOfPadding + ".json")
-);
 
-const predictionMlKNN = Object.values(
-  require("./data/predictionOfMlKnnReduce" + numOfPadding + ".json")
-);
 
 const predictionByEmbeddedMlKnn = Object.values(require('./data/predictionOfMlKnnNoReduceEmbeddings.json'))
 const predictionByEmbeddedPython = Object.values(require('./data/predictionOfPythonNoReduceEmbeddings.json'))
 const predictionByVectorizedMlKnn = Object.values(require('./data/predictionOfMlKnnNoReduceVectorized.json'))
+const predictionTestSavedKnn = Object.values(require('./data/testSavedKnnResult.json'))
 
 // console.log(predictionByEmbeddedMlKnn.length);
 
 
 // evaluationModel(testLabel_nonReduce, predictionByEmbeddedMlKnn, "Result of embedding data by ml-knn")
 // evaluationModel(testLabel_nonReduce, predictionByEmbeddedPython, "Result of embedding data by python")
-evaluationModel(testLabel_nonReduce,predictionByVectorizedMlKnn,"Result of vectorized data by ml-knn")
+evaluationModel(testLabel_nonReduce,predictionTestSavedKnn,"Result of saved KNN")
 
 
 // evaluationModelMLKNN(testLabelArray, predictionMlKNN);

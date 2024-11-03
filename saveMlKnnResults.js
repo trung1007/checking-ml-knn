@@ -3,18 +3,18 @@ const fs = require("fs");
 
 const KNN = require("ml-knn");
 
-const trainDataArray = Object.values(
-  require("./data/trainDataArrayReduce" + numOfPadding + ".json")
-);
-const trainLabelArray = Object.values(
-  require("./data/trainLabelArrayReduce" + numOfPadding + ".json")
-);
-const testDataArray = Object.values(
-  require("./data/testDataArrayReduce" + numOfPadding + ".json")
-);
+// const trainDataArray = Object.values(
+//   require("./data/trainDataArrayReduce" + numOfPadding + ".json")
+// );
+// const trainLabelArray = Object.values(
+//   require("./data/trainLabelArrayReduce" + numOfPadding + ".json")
+// );
+// const testDataArray = Object.values(
+//   require("./data/testDataArrayReduce" + numOfPadding + ".json")
+// );
 
-const mlKNNPredictionPath =
-  "./data/predictionOfMlKnnReduce" + numOfPadding + ".json";
+// const mlKNNPredictionPath =
+//   "./data/predictionOfMlKnnReduce" + numOfPadding + ".json";
 
 const trainDataEmbeddings = Object.values(require('./data/trainDataArrayNoReduceEmbeddings.json'))
 const trainLabelArrayNoReduce = Object.values(require('./data/trainLabelArrayNoReduce.json'))
@@ -45,10 +45,12 @@ function saveResultMLKNN(mlKNNPredictionPath, train, label, test) {
     testData.push(test[i]);
   }
   const knn_model = new KNN(trainData, trainLabel, { k: 2 });
+  console.log(knn_model);
+  
   const prediction = knn_model.predict(testData);
-  fs.writeFileSync(
-    mlKNNPredictionPath,
-    JSON.stringify(prediction, null, 2),
-    "utf-8"
-  );
+  // fs.writeFileSync(
+  //   mlKNNPredictionPath,
+  //   JSON.stringify(prediction, null, 2),
+  //   "utf-8"
+  // );
 }

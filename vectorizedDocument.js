@@ -1,4 +1,3 @@
-const nj = require('numjs')
 const fs = require('fs')
 const dictionaryPython = require('./common/document_vectors.json')
 const trainDataText = require('./data/trainData/trainTextArray.json')

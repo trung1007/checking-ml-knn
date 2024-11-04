@@ -1,10 +1,10 @@
 const nj = require('numjs')
 const fs = require('fs')
-const dictionaryPython = require('./data/document_vectors.json')
-const trainDataText = require('./data/trainDataTextNoReduce.json')
-const testDataText = require('./data/testDataTextNoReduce.json')
-const trainDataPath = './data/trainDataVectorized.json'
-const testDataPath = './data/testDataVectorized.json'
+const dictionaryPython = require('./data/dictionary/document_vectors.json')
+const trainDataText = require('./data/trainData/trainTextArray.json')
+const testDataText = require('./data/testData/testTextArray.json')
+const trainDataPath = './data/trainData/trainDataVectorized.json'
+const testDataPath = './data/testData/testDataVectorized.json'
 
 vectorizedData(trainDataText, trainDataPath)
 vectorizedData(testDataText, testDataPath)

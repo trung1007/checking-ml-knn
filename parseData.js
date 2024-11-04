@@ -2,10 +2,10 @@ const fs = require('fs')
 const trainData = Object.values(require('./data/trainData.json'))
 const testData = Object.values(require('./data/testData.json'))
 
-const trainDataPath = './data/trainDataTextNoReduce.json'
-const trainLabelPath = "./data/trainLabelArrayNoReduce.json"
-const testDataPath = './data/testDataTextNoReduce.json'
-const testLabelPath = './data/testLabelArrayNoReduce.json'
+const trainDataPath = './data/trainData/trainTextArray.json'
+const trainLabelPath = './data/trainData/trainLabelArray.json'
+const testDataPath = './data/testData/testTextArray.json'
+const testLabelPath = './data/testData/testLabelArray.json'
 
 
 parseData(trainData, trainDataPath, trainLabelPath)

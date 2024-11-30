@@ -2562,5 +2562,101 @@
   {
     "spam": true,
     "text": "anh đang có một biên lai phạt nguội do vi phạm giao thông"
+  },
+  {
+    "spam": true,
+    "text": "Bạn có phải là Duy không"
+  },
+  {
+    "spam": false,
+    "text": "Bạn đang làm việc tại"
+  },
+  {
+    "spam": true,
+    "text": "Tôi là công an từ phía thành phố"
+  },
+  {
+    "spam": true,
+    "text": "Xin chào, Tôi là công an từ phía thành phố"
+  },
+  {
+    "spam": true,
+    "text": "Xin chào, bạn đang vi phạm"
+  },
+  {
+    "spam": true,
+    "text": "Bạn bị gọi vì vi phạm "
+  },
+  {
+    "spam": false,
+    "text": "Bạn có khỏe không"
+  },
+  {
+    "spam": false,
+    "text": "Alo, Bạn có khỏe không"
+  },
+  {
+    "spam": true,
+    "text": "Bạn có phải là An không"
+  },
+  {
+    "spam": true,
+    "text": "Bạn có phải là Nam không"
+  },
+  {
+    "spam": false,
+    "text": "Bạn đang làm việc tại văn phòng nào"
+  },
+  {
+    "spam": false,
+    "text": "Bạn hiện đang làm việc ở đâu"
+  },
+  {
+    "spam": true,
+    "text": "Tôi là công an từ phía sở cảnh sát quận"
+  },
+  {
+    "spam": true,
+    "text": "Xin chào, tôi là công an từ phía phòng điều tra thành phố"
+  },
+  {
+    "spam": true,
+    "text": "Xin chào, bạn đang bị điều tra vì vi phạm pháp luật"
+  },
+  {
+    "spam": true,
+    "text": "Bạn bị gọi để làm rõ thông tin liên quan đến một vụ việc"
+  },
+  {
+    "spam": false,
+    "text": "Bạn có rảnh không"
+  },
+  {
+    "spam": false,
+    "text": "Alo, dạo này bạn thế nào"
+  },
+  {
+    "spam": true,
+    "text": "Bạn đang bị triệu tập đến cơ quan điều tra để làm rõ"
+  },
+  {
+    "spam": true,
+    "text": "Xin chào, bạn bị nghi ngờ liên quan đến một vụ lừa đảo"
+  },
+  {
+    "spam": true,
+    "text": "Xin chào, tôi là nhân viên của cơ quan điều tra, bạn cần hợp tác"
+  },
+  {
+    "spam": true,
+    "text": "Bạn có liên quan đến một vi phạm, hãy làm rõ thông tin"
+  },
+  {
+    "spam": false,
+    "text": "Bạn có muốn gặp nhau cuối tuần này không"
+  },
+  {
+    "spam": false,
+    "text": "Alo, bạn có thời gian không"
   }
 ]

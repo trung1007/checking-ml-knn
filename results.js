@@ -8,9 +8,13 @@ const testLabel_nonReduce = Object.values(require('./data/testData/testLabelArra
 
 
 
-const predictionTestSavedKnn = Object.values(require('./data/prediction/testSavedKnnResult.json'))
+const predictionTestSavedKnn = Object.values(require('./data/prediction/testSavedKnnResultK5.json'))
 
 // console.log(predictionByEmbeddedMlKnn.length);
+
+console.log(testLabel_nonReduce.length);
+console.log(predictionTestSavedKnn.length);
+
 
 
 evaluationModel(testLabel_nonReduce,predictionTestSavedKnn,"Result of saved KNN")
@@ -27,10 +31,10 @@ function evaluationModel(result_expect, result_actual, typeText) {
       true_positive++;
     }
     if (result_expect[i] === 1 && result_actual[i] === 0) {
-      false_positive++;
+      false_negative++;
     }
     if (result_expect[i] === 0 && result_actual[i] === 1) {
-      false_negative++;
+      false_positive++;
     }
     if (result_expect[i] === 0 && result_actual[i] === 0) {
       true_negative++;
